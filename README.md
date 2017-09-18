@@ -1,4 +1,4 @@
-This is solution modern frame for development website from scretch uses last version Angular and Web API Core 2.0 service.
+This is solution modern frame for development website uses last version Angular and Web API Core 2.0 service.
 
 <a href="http://owners2.azurewebsites.net">http://owners2.azurewebsites.net</a>
 
