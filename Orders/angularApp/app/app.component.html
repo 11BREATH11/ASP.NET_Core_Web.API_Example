@@ -1,0 +1,41 @@
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="btn btn-success navbar-toggle" (click)="navbarExpanded = !navbarExpanded">
+                <span class="glyphicon glyphicon-chevron-down"></span>
+            </button>
+            <a class="navbar-brand" [routerLink]="['']">Home</a>userName</div>
+        <div class="collapse navbar-collapse" data-collapse="!navbarExpanded">
+            <ul class="nav navbar-nav navbar-right">
+                <li [hidden]="!authentication.isAuth"><a [routerLink]="['/users']">Users</a></li>
+                <li [hidden]="!authentication.isAuth"><a [routerLink]="['/refresh']">Refresh Token</a></li>
+                <li [hidden]="!authentication.isAuth"><a href="Javascript:void(0)" (click)="logOutWith()">Logout</a></li>
+                <li [hidden]="authentication.isAuth"> <a [routerLink]="['/login']">Login</a></li>
+              <li [hidden]="authentication.isAuth"> <a [routerLink]="['/signup']">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="jumbotron">
+    <div class="container">
+        <div class="page-header text-center">
+            <h1>Angular</h1>
+        </div>
+			<p>This is solution modern frame for development website uses last version Angular and Web API Core 2.0 service.</p>
+			<p>You can <a target="_blank" href="https://github.com/11BREATH11/ASP.NET_Core_Web.API_Example">download</a> this solution on GitHub.</p>
+			<p>For authentication uses OAuth Bearer Token and implements Refresh Tokens. The backend API is built using ASP.NET Web API Core 2.0, JSON Web Tokens, ASP.NET Identity and Entity Framework</p>
+    </div>
+</div>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+<hr />
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="text-muted text-center">Created by Chistyukhin Eugene. Mail: 11breath11@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</div>

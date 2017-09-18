@@ -1,0 +1,45 @@
+﻿<h4 align="center">All Users</h4>
+<h4 align="center">{{userName}}'s Pets</h4>
+<div class="row">    
+    <a [routerLink]="['/users']">Back to all Users</a>    
+    <form (ngSubmit)="createPet($event)" ngNativeValidate>
+        <div class="col-md-6">
+            <input type="text" style="width: 200px; float: right" class="form-control" name="name" [(ngModel)]="pet.name" #name="ngModel" required placeholder="Enter Pet's Name"/>
+        </div>
+        <div class="col-md-6">
+            <button type="submit" class="btn btn-primary" style="width: 200px; float: left">
+                <span style="display:none"><i class="fa fa-refresh fa-spin"></i></span>
+                Add
+            </button>
+        </div>
+    </form>
+</div>
+
+<div class="row">
+    <span>Total count: </span> {{totalItems}}
+    <div style="height: 200px">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tr *ngFor="let pet of pets">
+                <td class="col-md-6">
+                    {{pet.name}}
+                </td>
+                <td>
+                    <button type="submit" style="width: 130px; float: right" class="btn btn-primary" (click)="deletePet($event,pet.id)">
+                        <span style="display: none"><i class="fa fa-refresh fa-spin"></i></span>
+                        Delete
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+<div class="text-center">
+    <pagination [totalItems]="totalItems" [(ngModel)]="currentPage" [itemsPerPage]="pageSize" [boundaryLinks]="false" (pageChanged)="pageChanged($event)" previous-text="&lsaquo;" next-text="&rsaquo;">
+    </pagination>
+    
+</div>
+</div>

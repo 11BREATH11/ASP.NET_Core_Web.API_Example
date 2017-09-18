@@ -1,0 +1,11 @@
+﻿<form class="form-login" role="form" ngNativeValidate  (ngSubmit)="signUp($event)">
+    <h2 class="form-login-heading">Sign up</h2>
+    <input type="text" class="form-control" placeholder="Username" [(ngModel)]="registration.userName" name="userName" required autofocus>
+    <input type="password" class="form-control" placeholder="Password" [(ngModel)]="registration.password" name="password" required>
+    <input type="password" class="form-control" placeholder="Confirm Password" [(ngModel)]="registration.confirmPassword" name="confirmPassword" required>
+    <button class="btn btn-lg btn-info btn-block" type="submit">
+			<span style="display:none"><i class="fa fa-refresh fa-spin"></i></span>Submit</button>
+    <div [hidden]="message == ''" [class]="(savedSuccessfully) ? 'alert alert-success' : 'alert alert-danger'">
+        {{message}}
+    </div>
+</form>

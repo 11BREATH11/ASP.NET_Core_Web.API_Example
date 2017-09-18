@@ -1,0 +1,32 @@
+﻿<div class="row">
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+    <div class="col-md-8">
+        <h3>Associate your {{registerData.provider}} Account</h3>
+        <hr />
+        <p class="text-success">You have successfully autheticated with <strong>{{registerData.provider}} </strong>. Please enter a user name below for this site and click the Register button to log in.</p>
+        <div class="row">
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+            <div class="col-md-6">
+                <form class="form-login" role="form" ngNativeValidate (ngSubmit)="registerExternal()">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Username" [(ngModel)]="registerData.userName" name="userName" required autofocus>
+                        <button class="btn btn-sm btn-info btn-block" type="submit" style="margin-top: 10px;">Register</button>
+                    </div>
+                    <div [hidden]="message == ''" [class]="(savedSuccessfully) ? 'alert alert-success' : 'alert alert-danger'">
+                        {{message}}
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+</div>
