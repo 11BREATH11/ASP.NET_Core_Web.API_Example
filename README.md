@@ -9,7 +9,7 @@ Solution devided on 4 projects:
 
 - Ordes - main project, uses Angular with WebPack and ASP.Net Core 2.0
 - API - REST Service, uses ASP.NET Web API Core 2.0
-- DAL - Data Access Layer, uses Entity Framework.
+- DAL - Data Access Layer, uses Entity Framework Core.
 - BLL - Business Logic Layer
 
 After download and open need refresh node modules in project Orders. For easy uses WebPack install <a href="https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebPackTaskRunner">Web Pack Task Runner</a>. 
