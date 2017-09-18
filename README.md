@@ -12,8 +12,6 @@ Solution devided on 4 projects:
 - DAL - Data Access Layer, uses Entity Framework.
 - BLL - Business Logic Layer
 
-All project uses Dependency injection, uses Autofac.
-
 After download and open need refresh node modules in project Orders. For easy uses WebPack install <a href="https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebPackTaskRunner">Web Pack Task Runner</a>. 
 
 For run front-end unit-tests uses Karma, Jasmine and Gulp.
