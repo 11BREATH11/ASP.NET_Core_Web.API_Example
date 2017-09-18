@@ -16,6 +16,6 @@ After download and open need refresh node modules in project Orders. For easy us
 
 For run front-end unit-tests uses Karma, Jasmine and Gulp.
 
-For Database point you connection string in project API in file web.config. After first run application, database will be create in memory automaticaly for testing service.
+For Database point you connection string in project API in file appsettings.json. After first run application, database will be create in memory automaticaly for testing service.
 
 For authorizarion via social networks need point your tokens for google and facebook in project Api, but you can use mine, if its still will be work.
