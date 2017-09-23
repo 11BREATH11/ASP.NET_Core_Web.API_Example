@@ -99,7 +99,7 @@ namespace BLL
 			{
 				Items = petsView.OrderBy(m => m.Id).Skip((pageNumber - 1) * pageSize).Take(pageSize),
 				TotalItems = petsView.Count(),
-				UserName =  _gRep.Table<Users>().First(p => p.Id == userId).Name
+				UserName =  _gRep.Table<Users>().FirstOrDefault(p => p.Id == userId).Name
 
 			};
 
