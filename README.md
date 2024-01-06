@@ -1,7 +1,5 @@
 This is solution for easy start develop website use Angular and Web API Core 2.0 service with OAuth Authentication.
 
-<a href="http://http://angularwebapitemplate.azurewebsites.net">http://angularwebapitemplate.azurewebsites.net</a>
-
 This solution devlopment for ASP.Net Core 2.0 framework and there is the same project for framework ASP.Net (not Core), you can download it <a href="https://github.com/11BREATH11/ASP.NET_Web.API_Example">here</a>,
 
 For authentication uses OAuth Bearer Token and implements Refresh Tokens. 
